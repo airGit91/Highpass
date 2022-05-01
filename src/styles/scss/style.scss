@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url("../..//fonts/TTFirsNeue/TTFirsNeue-Regular.woff2"),
+        url("../../fonts/TTFirsNeue/TTFirsNeue-Regular.woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Regular.woff2"),
+        url("../../fonts/Roboto/Roboto-Regular.woff");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TT Firs Neue";
+    src: url("../../fonts/TTFirsNeue/TTFirsNeue-Bold.woff2"),
+        url("../../fonts/TTFirsNeue/TTFirsNeue-Bold.woff");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../fonts/Roboto/Roboto-Bold.woff2"),
+        url("../../fonts/Roboto/Roboto-Bold.woff2");
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html,
+body,
+.ui-widget,
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    /* font-family: "Open Sans", sans-serif; */
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1290px;
+    margin: 0 auto;
+}
+
+.main {
+    position: relative;
+    margin-bottom: 80px;
+}

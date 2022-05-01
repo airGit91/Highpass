@@ -1,0 +1,166 @@
+@import 'variables.scss';
+
+.contacts {
+    padding-top: 67px;
+
+    &__title {
+        font-family: 'TT Firs Neue';
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template: 460px / 850px 410px;
+        gap: 30px;
+        padding-top: 12px;
+    }
+
+    [class*="ground-pane"] {
+        filter: grayscale(1);
+    }
+
+    &__yandex-map {
+        position: relative;
+        padding-top: 11px;
+    }
+
+    &__yandex-info {
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 410px;
+        padding-top: 174px;
+        padding-right: 50px;
+        padding-left: 60px;
+        background-color: rgba(32, 32, 32, 0.85);
+    }
+
+    &__yandex-info_close {
+        position: absolute;
+        top: 4%;
+        right: 5%;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='10' fill='%23666666'/%3E%3Crect x='6.20712' y='5.5' width='12' height='1' transform='rotate(45 6.20712 5.5)' fill='white'/%3E%3Crect x='5.5914' y='13.9854' width='12' height='1' transform='rotate(-45 5.5914 13.9854)' fill='white'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+    }
+
+    &__yandex-subtitle {
+        margin-bottom: 5px;
+        font-family: 'TT Firs Neue';
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 22px;
+        color: $white;
+    }
+
+    &__text {
+        margin-bottom: 3px;
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #cacaca;
+    }
+
+    &__link {
+        padding-left: 22px;
+        font-family: 'TT Firs Neue';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        color: $white;
+        background-image: url(../../images/phone.svg);
+        background-repeat: no-repeat;
+    }
+
+    &__content-subtitle {
+        font-family: 'TT Firs Neue';
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    &__content-text {
+        margin-bottom: 15px;
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #999;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-label {
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 23px;
+        background-color: #E9E9E9;
+        border: none;
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #999;
+    }
+
+    &__comment {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 23px;
+        background-color: #E9E9E9;
+        border: none;
+    }
+
+    &__comment[placeholder] {
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #999;
+    }
+
+    &__submit {
+        width: 126px;
+        padding-top: 15px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+        background-color: $colorBackgroundButton;
+        border: 3px solid transparent;
+        @include AnimationMain();
+        outline: none;
+    }
+
+    &__submit:hover {
+        background-color: #BC572B;
+    }
+
+    &__submit:focus {
+        border-color: #CE4307;
+    }
+
+    &__submit:active {
+        background-color: #CE4307;
+    }
+}

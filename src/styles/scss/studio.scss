@@ -1,0 +1,88 @@
+@import 'variables.scss';
+
+.studio {
+    padding-top: 30px;
+    padding-bottom: 39px;
+    color: $white;
+    background-color: $colorBackground;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 630px 630px;
+        grid-template-rows: auto auto;
+        gap: 30px;
+    }
+
+    &__title {
+        font-family: 'TT Firs Neue';
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__text {
+        padding-top: 3px;
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &__rigth {
+        padding-top: 3px;
+    }
+
+    &__subtitle {
+        padding-top: 20px;
+        font-family: 'TT Firs Neue';
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 22px;
+    }
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 17px;
+    }
+
+    &__input {
+        width: 474px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 23px;
+    }
+
+    &__input::placeholder {
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #CACACA;
+    }
+
+    &__submit {
+        padding-right: 20px;
+        padding-left: 20px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        color: $white;
+        background-color: $colorBackgroundButton;
+        border: 3px solid transparent;
+        @include AnimationMain();
+        outline: none;
+    }
+
+    &__submit:hover {
+        background-color: #BC572B;
+    }
+
+    &__submit:focus {
+        border-color: #CE4307;
+    }
+
+    &__submit:active {
+        background-color: #CE4307;
+    }
+}

@@ -1,0 +1,96 @@
+@import 'variables.scss';
+
+.works {
+    margin-top: 32px;
+    margin-bottom: 66px;
+
+    &>.container {
+        display: grid;
+        grid-template: repeat(3, auto) / 630px repeat(2, 300px);
+        column-gap: 30px;
+        grid-row-gap: 23px;
+    }
+
+    &__banner {
+        position: relative;
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        margin-top: 10px;
+        padding-top: 405px;
+        padding-right: 145px;
+        padding-left: 60px;
+        background-repeat: no-repeat;
+        background-image: url(../../images/desc/works-camera.jpg);
+    }
+
+    &__banner>* {
+        color: $white;
+    }
+
+    &__hashtag {
+        position: absolute;
+        top: 14px;
+        right: 17px;
+        padding: 7px 14px;
+        background-color: $hashtagBackgroundColor;
+    }
+
+    &__banner-subtitle {
+        font-family: 'Roboto';
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    &__title {
+        margin-bottom: 18px;
+        font-family: 'TT Firs Neue';
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 39px;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        padding: 12px 19px;
+        border: 3px solid transparent;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 16px;
+        background-color: $colorBackgroundButton;
+        @include AnimationMain();
+        outline: none;
+    }
+
+    &__link:hover {
+        background-color: #BC572B;
+    }
+
+    &__link:focus {
+        border-color: #CE4307;
+    }
+
+    &__link:active {
+        background-color: #CE4307;
+    }
+
+    &__subtitle {
+        grid-column: 2 / 4;
+        font-family: 'TT Firs Neue';
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__picture-1 {
+        grid-column: 2 / 4;
+    }
+
+    &__picture-2 {
+        grid-column: 2 / 3;
+    }
+
+    &__picture-3 {
+        grid-column: 3 / 4;
+    }
+}

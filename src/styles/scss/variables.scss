@@ -1,0 +1,9 @@
+$colorBackground: #202020;
+$white: #fff;
+$colorBackgroundButton: #FF6E30;
+$hashtagBackgroundColor: #333;
+
+@mixin AnimationMain {
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
