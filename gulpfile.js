@@ -12,13 +12,10 @@ const sync = require('browser-sync').create()
 
 const html = () =>{
     return src('src/**.html')
-    .pipe(include({
-        prefix: '@@'
-    }))
     .pipe(htmlmin({
-        collapseWhitespace: true,
+        collapseWhitespace: false,
     }))
-    .pipe(dest('dist'))
+    .pipe(dest('build/src'))
 }
 
 const scss = () =>{
@@ -30,7 +27,13 @@ const scss = () =>{
         }))
         .pipe(csso())
         .pipe(concat('style.css'))
-        .pipe(dest('dist/styles/css'))
+        .pipe(dest('build/src/styles/css'))
+}
+
+const scripts = () => {
+    return src('src/scripts/**.js')
+        .pipe(concat('all.js'))
+        .pipe(dest('build/src/scripts'));
 }
 
 const clear = () => {
@@ -47,7 +50,9 @@ const serve = () => {
 
 exports.html = html
 exports.scss = scss
-exports.build = series(clear, scss, html)
+exports.scripts = scripts
+// exports.build = series(clear, scss, html)
+exports.build = series(html, scss, scripts)
 exports.serve = series(clear, scss, html, serve)
 exports.clear = clear
 

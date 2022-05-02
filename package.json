@@ -1,7 +1,6 @@
 {
   "name": "highpass",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   
   "scripts": {
@@ -22,6 +21,16 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^5.1.0",
     "node-sass": "^7.0.1",
-    "sass": "^1.49.11"
-  }
+    "sass": "^1.51.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airGit91/Highpass.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/airGit91/Highpass/issues"
+  },
+  "homepage": "https://github.com/airGit91/Highpass#readme",
+  "description": ""
 }
