@@ -4,6 +4,7 @@
     padding-top: 67px;
 
     &__title {
+        margin-bottom: 25px;
         font-family: 'TT Firs Neue';
         font-weight: bold;
         font-size: 24px;
@@ -13,7 +14,6 @@
         display: grid;
         grid-template: 460px / 850px 410px;
         gap: 30px;
-        padding-top: 12px;
     }
 
     [class*="ground-pane"] {
@@ -22,7 +22,6 @@
 
     &__yandex-map {
         position: relative;
-        padding-top: 11px;
     }
 
     &__yandex-info {
@@ -75,6 +74,10 @@
         color: $white;
         background-image: url(../../images/phone.svg);
         background-repeat: no-repeat;
+    }
+
+    &__content{
+        margin-top: -11px;
     }
 
     &__content-subtitle {
